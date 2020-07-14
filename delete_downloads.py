@@ -3,7 +3,8 @@ import shutil
 
 
 current_dir = os.getcwd()
-expected_dir = "/Users/deniz/Downloads"
+expected_dir = input("Please enter Folderpath. /PATH/TO/YOUR/FOLDER/ \n")
+
 print(os.getcwd())
 if current_dir != expected_dir:
     os.chdir(expected_dir)
@@ -17,4 +18,4 @@ if test == "Y" or "y":
         else:
             shutil.rmtree(file)
 else:
-    print("lesh")
+    print(":(")

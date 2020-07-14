@@ -3,9 +3,9 @@ import smtplib, ssl, getpass
 
 smtp_server = "smtp.gmail.com"
 port = 587  # For starttls
-sender_email = "monddeniz@gmail.com"
-receiver_email = "deniz-dogan@t-online.de"
-password = getpass.getpass(prompt="Password", stream=None)
+sender_email = input("Enter your Email \n")
+receiver_email = input("Who is receiving your Mail ? Enter his/her Mailadress \n")
+password = getpass.getpass(prompt="Enter your Mail Password \n", stream=None)
 
 # Create a secure SSL context
 context = ssl.create_default_context()
